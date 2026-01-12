@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="anime.min.js"></script>
+</head>
+<body>
+
+    <div id="ui-layer"></div>
+
+    <div id="error-msg" style="display:none; color:red; position:absolute; top:10px; left:10px; background:rgba(0,0,0,0.8); padding:10px; z-index:100;">
+        ⚠️ Character Not Loaded!<br>
+        Please ensure character.js is updated.
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- 1. CORE LIBRARIES -->
+    <script src="character.js"></script>
+
+    <!-- 2. GAME LOGIC MODULES (Load these before engine) -->
+    <script src="level.js"></script>
+    <script src="cutscenes.js"></script>
+    
+    <!-- 3. MAIN ENGINE -->
+    <script src="engine.js"></script>
+
+    
+    <!-- 5. ENTRY POINT -->
+    <script src="welcome.js"></script>
+
+    <!-- So about the newgame.js and loadgame.js they are loaded by the menu.js -->
+
+</body>
+</html>
